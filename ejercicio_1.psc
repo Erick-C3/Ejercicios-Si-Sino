@@ -1,4 +1,4 @@
-Algoritmo ingreso_al_campus	
+Algoritmo ingresoCampus	
 	
 	Definir USUARIO_REGISTRADO_UNO como texto;
 	USUARIO_REGISTRADO_UNO = "erick";
