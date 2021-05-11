@@ -1,20 +1,27 @@
 Algoritmo prepararSopa
-	definir tengoVerdura como logico;
-	tengoVerdura = Falso;
-	definir tengoAgua como logico;
-	tengoAgua = falso;
-	definir tengoCondimentos como logico;
-	tengoCondimentos = falso;
-	definir tengoCuboCaldo como logico;
-	tengoCuboCaldo = falso;
+	definir hayLluvia como logico;
+	hayLluvia = Falso;
+	definir prepareParaguas como logico;
+	prepareParaguas = Falso;
 	
-	escribir "Indique en el siguiente orden si tiene Verdura, Agua, Condimentos y/o Cubo de Caldo usando V - F";
-	leer tengoVerdura tengoAgua tengoCondimentos tengoCuboCaldo;
-	
-	si (tengoVerdura y tengoAgua y (tengoCondimentos o tengoCuboCaldo)) entonces
-		escribir "Puedo preparar sopa!";
+	escribir "Esta lloviendo?";
+	leer hayLluvia;
+		
+	si hayLluvia Entonces
+		
+		escribir "Preparaste el paraguas?";
+		leer prepareParaguas;
+		
+		si prepareParaguas Entonces
+			escribir "Esta lloviendo, agarra el paraguas y sali tranquilo!";
+		SiNo
+			escribir "Estra lloviendo, sali corriendo! :(";
+		FinSi
+		
 	SiNo
-		escribir "ups";
+		
+		Escribir  "No llueve, sali tranqui! :)";
+		
 	FinSi
 	
 FinAlgoritmo
