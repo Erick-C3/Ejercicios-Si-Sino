@@ -1,4 +1,4 @@
-Algoritmo prepararSopa
+Algoritmo salirApurado
 	definir hayLluvia como logico;
 	hayLluvia = Falso;
 	definir prepareParaguas como logico;
