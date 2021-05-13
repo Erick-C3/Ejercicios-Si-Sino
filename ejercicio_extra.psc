@@ -28,20 +28,16 @@ Algoritmo calificarEnvio
 			Escribir "V para buen estado y F para mal estado";
 			leer buenEstadoPedido;
 			
+			si cantDiasDemoro == DIAS_ESTIMADO_ENTREGA Entonces 
+				escribir "Pasaron " cantDiasDemoro " y llego justo";
+			sino 
+				escribir "Pasaron " cantDiasDemoro " y llego antes";
+			FinSi
+			
 			si buenEstadoPedido Entonces
-				si cantDiasDemoro == DIAS_ESTIMADO_ENTREGA Entonces //codigo que se va a repetir
-					escribir "Pasaron " cantDiasDemoro " y llego justo";
-				sino 
-					escribir "Pasaron " cantDiasDemoro " y llego antes";
-				FinSi
 				escribir "En buen estado";
 				escribir "Cantidad estrellas: ***";
 			SiNo
-				si cantDiasDemoro == DIAS_ESTIMADO_ENTREGA Entonces //codigo repetido (MODULARIZAR)
-					escribir "Pasaron " cantDiasDemoro " y llego justo";
-				sino 
-					escribir "Pasaron " cantDiasDemoro " y llego antes";
-				FinSi
 				escribir "En mal estado";
 				escribir "Cantidad estrellas: **";
 			FinSi
